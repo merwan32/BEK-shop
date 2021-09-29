@@ -1,0 +1,229 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(45deg , #861ec2,#bf92da);
+}
+
+.box {
+    width: 400px;
+    height: 70vh;
+    border :rgba(238, 236, 236, 0.534) solid 2px ;
+    border-radius: 25px;
+    margin: 15vh auto ;
+    position: relative;
+    box-shadow: 7px 13px 12px 0px #943cdd;
+    background: linear-gradient(45deg,rgba(255,255,255,0.3),rgba(255,255,255,0.1));
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border :rgba(255, 255, 255, 0.424) solid 2px ;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    border-radius: 50%;
+    transform: translate(-50% , -50%);
+    background: linear-gradient(45deg , #a973c8,#bf92da);
+}
+.box .btn {
+    width: 250px;
+    height: 50px;
+    margin: 60px auto 0;
+    position: relative;
+}
+.box .btn button {
+    width: 123px;
+    height: 50px;
+    font-size: 20px; 
+}
+
+.box .btn :first-child {
+    margin-right: -2px;
+    background: transparent;
+    border: 2px solid rgba(66, 1, 126, 0.76);
+    border-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    cursor: pointer; 
+}
+.box .btn span {
+    width: 123px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(45deg , #861ec2,rgba(66, 1, 126, 0.76));
+    position: absolute;
+    border: 2px solid rgba(66, 1, 126, 0.76);
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.box .btn :last-child {
+    margin-left: -2px;
+    background: transparent;
+    border: 2px solid rgba(66, 1, 126, 0.76);
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    cursor: pointer; 
+}
+.box .log {
+    display: flex;
+    flex-direction: row;
+}
+.box .log-in {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 40vh;
+    margin: 20px auto;
+    position: absolute;
+    left: 50px;
+    transition: 0.5s;
+}
+.box .log-in input {
+    margin: 5px 0;
+    height: 50px;
+    padding-left: 20px;
+    outline: none;  
+    background: transparent;
+    border: none;
+    color: teal;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.397);
+    position: relative;
+    font-size: 25px;
+}
+.box .log-in button {
+    height: 50px;
+    border-radius: 25px;
+    width: 200px;
+    margin: 20px auto;
+    background: linear-gradient(45deg , #9953c2 30%,rgba(125, 67, 180, 0.76));
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+.box .log-in button:hover {
+    box-shadow: 10px 10px 10px #9953c2,
+    10px 10px 20px #9953c2,
+    10px 10px 40px #9953c2,
+    10px 10px 80px #9953c2;
+}
+
+.box .log-in input:hover {
+    border-bottom:  rgba(80, 2, 133, 0.76) solid 2px;
+}
+
+.box .log-in input~ span {
+    margin: -35px 0 35px 20px;
+    transition: 0.5s;
+    color: rgb(189, 191, 192);
+}
+.box .log-in input:focus + span,
+.box .log-in input:valid + span{
+    font-size: 0.8em;
+   transform: translate(-20px,-20px);
+}
+.box .regester {
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 20px;
+    margin: 10px auto;
+    position: absolute;
+    right: 50px; 
+    top: 100px;
+    height: 50vh;
+    transition: 0.5s;
+}
+.box .regester input {
+    margin: 2px 0 0;
+    height: 50px;
+    padding-left: 20px;
+    outline: none;  
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    color: rgb(125, 18, 212);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.397);
+}
+.box .regester input:hover {
+    border-bottom:  rgba(66, 1, 126, 0.76) solid 2px;
+}
+.back {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.back a {
+    text-decoration: none;
+    color: #3F0071;
+    font-size: 20px;
+}
+
+.box .regester input:focus + span,
+.box .regester input:valid + span{
+    font-size: 0.8em;
+    transform: translate(-20px,-20px);
+}
+
+.box .regester input + span {
+    margin: -35px 0 35px 20px;
+    transition: 0.5s;
+    color: rgb(189, 191, 192);
+}
+.box .regester button {
+    height: 50px;
+    border-radius: 25px;
+    width: 200px;
+    margin: 20px auto;
+    background: linear-gradient(45deg , #9953c2 30%,rgba(125, 67, 180, 0.76));
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+.box .regester button:hover {
+    box-shadow: 10px 10px 10px #9953c2,
+    10px 10px 20px #9953c2,
+    10px 10px 40px #9953c2,
+    10px 10px 80px #9953c2;
+}
+
+@media (max-width:400px) {
+    .box {
+        width: 300px;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    .btn  {
+        width: 200px;
+    }
+    .log-in input{
+        width: 200px;
+    }
+    .box .log-in button{
+        width: 100px;
+        margin: 0 50px;
+    }
+    .regester {
+        width: 200px;
+        left: 50px;
+    }
+    .regester input{
+        width: 200px;
+    }
+    .box .regester button {
+        width: 100px;
+        margin: 0 50px;
+    }
+}

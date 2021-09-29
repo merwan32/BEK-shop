@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>BEK-shoping  | log-in page </title>
+</head>
+<body>    
+    <div class="back">
+        <a href="index.html"><i class="fas fa-arrow-circle-left"></i> Back</a>
+    </div>
+    <div class="box" class="your-element" data-tilt data-tilt-speed="800">
+        <img src="images/avater.png" alt="">
+        <div class="btn">
+            <button type="button" onclick="myfunc1()">log in</button>
+            <span id="demo"></span>
+            <button type="button" onclick="myfunc2()">regester</button>
+        </div>
+        <form class="log-in" id="log-in">
+            <input type="text" required><span><i class="fas fa-user"></i> username</span>
+            <input type="password" required><span><i class="fas fa-lock"></i> password</span>
+            <button type="submit">submit</button>
+        </form>
+        <form class="regester" id="regester">
+            <input type="text" required><span><i class="fas fa-user"></i> username</span>
+            <input type="email" required><span><i class="fas fa-envelope"></i> email</span>
+            <input type="password" required><span><i class="fas fa-lock"></i> password</span>
+            <input type="password" required><span><i class="fas fa-lock"></i> re-password</span>
+            <button type="submit">submit</button>
+        </form>
+         <script type="text/javascript">
+         function myfunc1() {
+             document.getElementById("log-in").style.display="flex"
+             document.getElementById("demo").style.left="0px"
+             document.getElementById("regester").style.display="none"
+         }
+         function myfunc2() {
+             document.getElementById("log-in").style.display="none"
+             document.getElementById("demo").style.left="123px"
+             document.getElementById("regester").style.display="flex"
+         }
+        </script>
+</body>
+</html>
