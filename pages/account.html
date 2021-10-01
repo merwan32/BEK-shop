@@ -10,6 +10,10 @@
     <title>BEK-shoping  | log-in page </title>
 </head>
 <body>    
+    <div class="loading">
+        <div class="circle0"></div>
+    </div>
+    <div class="body">
     <div class="back">
         <a href="../index.html"><i class="fas fa-arrow-circle-left"></i> Back</a>
     </div>
@@ -32,6 +36,7 @@
             <input type="password" required><span><i class="fas fa-lock"></i> re-password</span>
             <button type="submit">submit</button>
         </form>
+    </div>
          <script type="text/javascript">
          function myfunc1() {
              document.getElementById("log-in").style.display="flex"
@@ -43,6 +48,11 @@
              document.getElementById("demo").style.left="123px"
              document.getElementById("regester").style.display="flex"
          }
+
+         window.addEventListener('load',function () {
+               document.querySelector('.body').style.display = 'block';
+               document.querySelector('.loading').style.display = 'none';
+})
         </script>
 </body>
 </html>

@@ -10,6 +10,10 @@
     <title>BEK-shoping  | contact page </title>
 </head>
 <body>
+  <div class="loading">
+    <div class="circle0"></div>
+</div>
+  <div class="body">
     <div class="back">
       <a href="../index.html"><i class="fas fa-arrow-circle-left"></i> Back</a>
     </div>
@@ -30,5 +34,13 @@
         </form>
       </div>
     </div>
+  </div>
+  <script >
+    
+    window.addEventListener('load',function () {
+               document.querySelector('.body').style.display = 'block';
+               document.querySelector('.loading').style.display = 'none';
+})
+  </script>
 </body>
 </html>

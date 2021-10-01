@@ -10,6 +10,29 @@ body {
     background: linear-gradient(45deg , #861ec2,#bf92da);
 }
 
+.loading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body {
+    display: none;
+}
+.circle0 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid ;
+    animation: rotate 1s linear 0s infinite  ;
+    border-color: rgb(197, 16, 230) white rgb(197, 16, 230) rgb(197, 16, 230) ;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .box {
     width: 400px;
     height: 70vh;
