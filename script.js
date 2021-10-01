@@ -130,3 +130,8 @@ function tst() {
         left.classList.remove("active");
     }
 }
+
+window.addEventListener('load',function () {
+    document.querySelector('.body').style.display = 'block';
+    document.querySelector('.loading').style.display = 'none';
+})
