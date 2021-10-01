@@ -153,7 +153,7 @@ img {
     border-radius: 50%;
     border: 5px solid ;
     animation: rotate 1s linear 0s infinite  ;
-    border-color: rgb(197, 16, 230) white rgb(197, 16, 230) rgb(197, 16, 230) ;
+    border-color: rgb(197, 16, 230) transparent rgb(197, 16, 230) rgb(197, 16, 230) ;
 }
 @keyframes rotate {
     100% {
