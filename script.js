@@ -131,7 +131,15 @@ function tst() {
     }
 }
 
-window.addEventListener('load',function () {
-    document.querySelector('.body').style.display = 'block';
-    document.querySelector('.loading').style.display = 'none';
-})
+
+
+loads = document.querySelectorAll('.load');
+
+loads.forEach(load => {
+    loadimg = load.querySelector('img');
+    loadimg.addEventListener('load',function () {
+        load.querySelector('img').style.display='block';
+        load.querySelector('.loading').style.display ='none';
+    });
+});
+

@@ -8,6 +8,10 @@
 body {
     width: 100%;
     background: linear-gradient(45deg , #861ec2,#bf92da);
+    display: block;
+}
+
+.body {
     display: none;
 }
 
