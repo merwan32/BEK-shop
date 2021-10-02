@@ -17,13 +17,7 @@ body {
 .body {
     display: none;
 }
-.loading {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .btn {
     position: fixed;
     width: 50px;
@@ -392,17 +386,49 @@ margin-left: 20px;
     justify-content: center;
     overflow: hidden;
 }
+.loading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #270129;
+}
 .circle0 {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: 5px solid ;
+    position: relative;
+    filter: hue-rotate(0deg);
+}
+.circle0::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    background: #270129;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.circle0::after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(45deg,transparent 50% , rgb(211, 30, 157));
+    border-radius: 50%;
     animation: rotate 1s linear 0s infinite  ;
-    border-color: rgb(197, 16, 230) white rgb(197, 16, 230) rgb(197, 16, 230) ;
+    z-index: -1;
+
 }
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
+        filter: hue-rotate(360deg);
     }
 }
 .recent div img {
