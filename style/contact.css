@@ -115,11 +115,6 @@ img {
 }
 
 @media (max-width : 800px){
-    .img {
-        position: absolute;
-        top: 0;
-        right: 0%;
-    }
     .contact {
         width: 100%;
     }
@@ -138,6 +133,7 @@ img {
 @media (min-height: 700px) and (max-width: 400px) {
    .img {
        width: 100%;
+       margin-bottom: 20px;
    }
 }
 

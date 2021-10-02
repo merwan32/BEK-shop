@@ -132,14 +132,22 @@ function tst() {
 }
 
 
-
+/*
 loads = document.querySelectorAll('.load');
 
-loads.forEach(load => {
-    loadimg = load.querySelector('img');
-    loadimg.addEventListener('load',function () {
-        load.querySelector('img').style.display='block';
-        load.querySelector('.loading').style.display ='none';
-    });
-});
 
+
+for (let i = 0; i < loads.length; i++) {
+    loadimg = loads[i].querySelector('img');
+    loadimg.addEventListener('load',function () {
+        loads[i].querySelector('img').style.display='block';
+        loads[i].querySelector('.loading').style.display ='none';
+    });
+    if (i == loads.length) {
+        for (let i = 0; i < loads.length; i++) {
+                loads[i].querySelector('img').style.display='block';
+                loads[i].querySelector('.loading').style.display ='none';
+    }
+}
+}
+*/
